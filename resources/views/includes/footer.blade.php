@@ -61,10 +61,10 @@
             <form action="{{ url('logout') }}" method="POST">
                 @csrf
                 <button class="btn btn-danger" type="button" data-dismiss="modal">
-                    Batal
+                    Cancel
                 </button>
                 <button class="btn btn-success" type="submit">
-                    Keluar
+                    Logout
                 </button>
             </form>
             </div>
@@ -75,7 +75,7 @@
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3"><span class="text-muted d-none d-sm-inline-block">© 2020
             Copyright:
-            Tomini.Id <i class="fas fa-code text-success mr-1 ml-1"></i> Design by Yubli Audy Warokka</span>
+            Tomini.Id <i class="fas fa-code text-success mr-1 ml-1"></i> <i class="fab fa-html5 text-warning mr-1 ml-1"></i> <i class="fab fa-css3-alt text-primary mr-1 ml-1"></i> <i class="fab fa-laravel text-danger mr-1 ml-1"></i> Design by Yubli Audy Warokka</span>
     </div>
     <!-- Copyright -->
 

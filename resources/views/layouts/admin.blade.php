@@ -12,7 +12,9 @@
         <!-- App favicon -->
         <link rel="shortcut icon" href="{{ url('/backend/assets/images/favicon.ico') }}">
 
+        @stack('prepend-admin-style')
         @include('includes.admin.style')
+        @stack('addon-admin-style')
 
     </head>
 
@@ -31,8 +33,9 @@
             <!-- end page content -->
         </div>
         <!-- end page-wrapper -->
-        
+        @stack('prepend-admin-script')
         @include('includes.admin.script')
+        @stack('addon-admin-script')
         
     </body>
 

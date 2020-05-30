@@ -66,11 +66,11 @@
             <li class="dropdown my-2 my-lg-0 d-none d-md-block">
                 <a class="nav-link dropdown-toggle-id nav-user" data-toggle="dropdown" href="javascript: void(0);" role="button"
                     aria-haspopup="false" aria-expanded="false">
-                    <img src="https://ui-avatars.com/api/?name={{ Auth::user()->username }}" alt="profile-user" class="rounded-circle" style="width: 25px" /> 
+                    <img src="https://ui-avatars.com/api/?name={{ Auth::user()->username }}" alt="profile-user" class="rounded-circle" style="width: 30px" /> 
                     <span class="ml-1 nav-user-name hidden-sm">Hai, {{ Auth::user()->username }}<i class="mdi mdi-chevron-down"></i> </span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <div class="dropdown-item" href="#"><i class="fas fa-user-circle text-muted mr-2"></i> {{ Auth::user()->name }}</div>
+                    <a class="dropdown-item" href="#"><i class="fas fa-user-circle text-muted mr-2"></i> My Profile</a>
                     <a class="dropdown-item" href="#"><i class="fas fa-cog text-muted mr-2"></i> Settings</a>
                     <div class="dropdown-divider mb-0"></div>
                     <a class="dropdown-item" href="javascript: void(0);" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt text-muted mr-2"></i> Logout</a>

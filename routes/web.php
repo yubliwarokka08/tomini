@@ -41,6 +41,10 @@ Route::get('/checkout/confirm/{id}', 'CheckoutController@success')
     ->name('checkout-success')
     ->middleware(['auth', 'verified']);
 
+Route::get('/profile/{id}', 'ProfileController@Index')
+    ->name('profile')
+    ->middleware(['auth', 'verified']);
+
 Route::prefix('admin')
     ->namespace('Admin')
     ->middleware(['auth', 'admin'])

@@ -30,7 +30,7 @@
                         <br>
                         above sea level
                     </p>
-                    <a href="#" class="btn btn-get-started my-lg-0 my-2 my-sm-0 px-4">
+                    <a href="{{ route('register') }}" class="btn btn-get-started my-lg-0 my-2 my-sm-0 px-4">
                         <i class="fas fa-luggage-cart mr-2"></i>
                         Get started
                     </a>
@@ -57,7 +57,7 @@
                         <br>
                         separated by the Badung Strait
                     </p>
-                    <a href="#" class="btn btn-get-started my-2 my-sm-0 px-4">
+                    <a href="{{ route('register') }}" class="btn btn-get-started my-2 my-sm-0 px-4">
                         <i class="fas fa-luggage-cart mr-2"></i>
                         Get started
                     </a>
@@ -84,7 +84,7 @@
                         <br>
                         is located in the Badung Strait southeast of Bali
                     </p>
-                    <a href="#" class="btn btn-get-started my-2 my-sm-0 px-4">
+                    <a href="{{ route('register') }}" class="btn btn-get-started my-2 my-sm-0 px-4">
                         <i class="fas fa-luggage-cart mr-2"></i>
                         Get started
                     </a>
@@ -93,62 +93,44 @@
         </div>
     </div>
     <!--/.Slides-->
-    <!--Controls-->
-    {{-- <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a> --}}
-    <!--/.Controls-->
 </div>
 
 <!--/.Header Carousel Wrapper-->
 
-<section class="section section-statics-content" id="staticsContent">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-6 col-md-6 col-lg">
-                <div class="card text-center">
-                    <div class="statics-content">
-                        <h1><i class="fas fa-users"></i></h1>
-                        <h2>20K</h2>
-                        <p>Members</p>
+<section class="section-statics-bg">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="counter">
+                        <i class="fas fa-users fa-2x"></i>
+                        <h2 class="timer count-title count-number" data-to="20000" data-speed="1500"></h2>
+                        <p class="count-text ">Members</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg">
-                <div class="card text-center">
-                    <div class="statics-content">
-                        <h1><i class="fas fa-globe-asia"></i></h1>
-                        <h2>12</h2>
-                        <p>Countries</p>
-                    </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fas fa-globe-asia fa-2x"></i>
+                        <h2 class="timer count-title count-number" data-to="12" data-speed="1500"></h2>
+                    <p class="count-text ">Countries</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg">
-                <div class="card text-center">
-                    <div class="statics-content">
-                        <h1><i class="fas fa-hotel"></i></h1>
-                        <h2>3K</h2>
-                        <p>Hotels</p>
-                    </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fas fa-hotel fa-2x"></i>
+                        <h2 class="timer count-title count-number" data-to="3000" data-speed="1500"></h2>
+                    <p class="count-text ">Hotels</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg">
-                <div class="card text-center">
-                    <div class="statics-content">
-                        <h1><i class="fas fa-handshake"></i></h1>
-                        <h2>72</h2>
-                        <p>Partners</p>
-                    </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fas fa-handshake fa-2x"></i>
+                        <h2 class="timer count-title count-number" data-to="72" data-speed="1500"></h2>
+                    <p class="count-text ">Partners</p>
                 </div>
             </div>
         </div>
-    </div>
 </section>
+
 
     <section class="section-popular">
         <div class="container">
@@ -222,59 +204,19 @@
             </div>
         </div>
     </section>
-    <section class="section section-testimonial-content" id="testimonialContent">
+    
+    <section class="section-testimonial-two">
         <div class="container">
-            <div class="section-popular-travel row justify-content-center">
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="card card-testimonial text-center">
-                        <div class="testimonial-content">
-                            <img src="{{ url('frontend/images/user-pic1.png') }}" alt="User" class="mb-6 rounded-circle">
-                            <h3 class="mb-6">Mark Austine</h3>
-                            <img src="{{ url('frontend/images/star1.png') }}" alt="Rate" class="mb-6">
-                            <p class="testimonial">
-                                "Post votum promissa memini
-                                cuius adeptione cupis; quem
-                                pollicitus est aversione aversi
-                                et fuga."
-                            </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-box text-center">
+                        <div class="user-pic">
+                            <img src="{{ url('frontend/images/user-pic1@2x.png') }}" class="img-fluid" alt="User Pic">
                         </div>
-                        <hr>
-                        <p class="trip-to mt-2">
-                            Trip to Deratan Bali, Indonesia
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="card card-testimonial text-center">
-                        <div class="testimonial-content">
-                            <img src="{{ url('frontend/images/user-pic2.png') }}" alt="User" class="mb-6 rounded-circle">
-                            <h3 class="mb-6">Mark Austine</h3>
-                            <img src="{{ url('frontend/images/star2.png') }}" alt="Rate" class="mb-6">
-                            <p class="testimonial">
-                                "Post votum promissa memini
-                                cuius adeptione cupis; quem
-                                pollicitus est aversione aversi
-                                et fuga."
-                            </p>
-                        </div>
-                        <hr>
-                        <p class="trip-to mt-2">
-                            Trip to Bromo, Indonesia
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="card card-testimonial text-center">
-                        <div class="testimonial-content">
-                            <img src="{{ url('frontend/images/user-pic3.png') }}" alt="User" class="mb-6 rounded-circle">
-                            <h3 class="mb-6">Mark Austine</h3>
-                            <img src="{{ url('frontend/images/star3.png') }}" alt="Rate" class="mb-6">
-                            <p class="testimonial">
-                                "Post votum promissa memini
-                                cuius adeptione cupis; quem
-                                pollicitus est aversione aversi
-                                et fuga."
-                            </p>
+                        <h3>Mark Austine</h3>
+                        <img src="{{ url('frontend/images/star1.png') }}" alt="Rate" class="mb-6">
+                        <div class="content-testimonial">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                         </div>
                         <hr>
                         <p class="trip-to mt-2">
@@ -282,19 +224,55 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="my-2 my-lg-0">
-                        <a href="#" class="btn btn-need-help my-2 my-sm-0 px-4 mr-2 ml-2">
-                            <i class="fas fa-comments mr-2"></i>
-                            I Need Help
-                        </a>
-                        <a href="{{ route('register') }}" class="btn btn-get-started my-2 my-sm-0 px-4 mr-2 ml-2">
-                            <i class="fas fa-user-lock mr-2"></i>
-                            Get Started
-                        </a>
+    
+                <div class="col-md-4">
+                    <div class="card-box text-center">
+                        <div class="user-pic">
+                            <img src="{{ url('frontend/images/user-pic2@2x.png') }}" class="img-fluid" alt="User Pic">
+                        </div>
+                        <h3>Jhon August</h3>
+                        <img src="{{ url('frontend/images/star2.png') }}" alt="Rate" class="mb-6">
+                        <div class="content-testimonial">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </div>
+                        <hr>
+                        <p class="trip-to mt-2">
+                            Trip to Bromo, Indonesia
+                        </p>
                     </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card-box text-center">
+                        <div class="user-pic">
+                            <img src="{{ url('frontend/images/user-pic3@2x.png') }}" class="img-fluid" alt="User Pic">
+                        </div>
+                        <h3>Jane Doo</h3>
+                        <img src="{{ url('frontend/images/star3.png') }}" alt="Rate" class="mb-6">
+                        <div class="content-testimonial">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </div>
+                        <hr>
+                        <p class="trip-to mt-2">
+                            Trip to Deratan Bali, Indonesia
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-btn-get justify-content-center">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="my-2 my-lg-0">
+                    <a href="https://api.whatsapp.com/send?phone=6281245536677" class="btn btn-need-help my-2 my-sm-0 px-4">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        I Need Help
+                    </a>
+                    <a href="{{ route('register') }}" class="btn btn-get-started my-2 my-sm-0 px-4">
+                        <i class="fas fa-user-lock mr-2"></i>
+                        Get Started
+                    </a>
                 </div>
             </div>
         </div>
